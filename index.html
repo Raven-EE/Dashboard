@@ -4,9 +4,264 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
+
+    <!-- material icons cdn -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <!-- google fonts (poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
+
+    <!-- material icons -->
+    <!-- <sapn class="material-icons-sharp">search</sapn> -->
+
+    <!-- navbar -->
+    <nav>
+        <div class="container">
+
+            <!-- logo -->
+            <img src="./images/logo.png" class="logo">
+
+            <!-- search bar -->
+            <div class="search-bar">
+                <sapn class="material-icons-sharp">search</sapn>
+                <input type="search" placeholder="Search...">
+            </div>
+
+            <!-- profile area -->
+            <div class="profile-area">
+                <div class="theme-btn">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg">
+                    </div>
+                    <h5>Raven</h5>
+                    <span class="material-icons-sharp">expand_more</span>
+                </div>
+                <button class="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- main    -->
+    <main>
+
+        <!-- aside -->
+        <aside>
+            <button id="close-btn">
+                <sapn class="material-icons-sharp">close</sapn>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <sapn class="material-icons-sharp">dashboard</sapn>
+                    <h4>Dashboard</h4>
+                </a>
+                <a href="#">
+                    <sapn class="material-icons-sharp">currency_exchange</sapn>
+                    <h4>Exchange</h4>
+                </a>
+                <a href="#">
+                    <sapn class="material-icons-sharp">account_balance_wallet</sapn>
+                    <h4>Wallet</h4>
+                </a>
+                <a href="#">
+                    <sapn class="material-icons-sharp">payment</sapn>
+                    <h4>Transactions</h4>
+                </a>
+                <a href="#">
+                    <sapn class="material-icons-sharp">pie_chart</sapn>
+                    <h4>Analytics</h4>
+                </a>
+                <a href="#">
+                    <sapn class="material-icons-sharp">message</sapn>
+                    <h4>Messages</h4>
+                </a>
+                <a href="#">
+                    <sapn class="material-icons-sharp">help_center</sapn>
+                    <h4>Help Center</h4>
+                </a>
+                <a href="#">
+                    <sapn class="material-icons-sharp">settings</sapn>
+                    <h4>Settings</h4>
+                </a>
+            </div>
+            <!-- end of sidebar -->
+
+            <!-- updates -->
+            <div class="updates">
+                <sapn class="material-icons-sharp">update</sapn>
+                <h4>Updates Available</h4>
+                <small>Security Updates</small>
+                <small>General Updates</small>
+                <a href="#">Update Now</a>
+            </div>
+            <!-- end of updates -->
+        </aside>
+        <!-- end of aside -->
+
+
+
+        <!-- middle -->
+        <section class="middle">
+            <div class="header">
+                <h1>Overview</h1>
+                <input type="date">
+            </div>
+
+            <!-- cards -->
+            <div class="cards">
+                <!-- card 01 -->
+                <div class="card">
+                    <!-- top -->
+                    <div class="top">
+                        <div class="left">
+                            <img src="./images/BTC.png">
+                            <h2>BTC</h2>
+                        </div>
+                        <img src="./images/visa.png" class="right">
+                    </div>
+
+                    <!-- middle -->
+                    <div class="middle">
+                        <h1>$827,199</h1>
+                        <div class="chip">
+                            <img src="./images/card_chip.png">
+                        </div>   
+                    </div>
+
+                    <!-- bottom -->
+                    <div class="bottom">
+                        <div class="left">
+                            <small>Card Holder</small>
+                            <h5>RAVEN</h5>
+                        </div>
+                        <div class="right">
+                            <div class="expiry">
+                                <small>Expiry</small>
+                                <h5>08/23</h5>
+                            </div>
+                            <div class="cvv">
+                                <small>CVV</small>
+                                <h5>123</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of card 01 -->
+
+                <!-- card 02 -->
+                <div class="card">
+                    <!-- top -->
+                    <div class="top">
+                        <div class="left">
+                            <img src="./images/EHT.png">
+                            <h2>EHT</h2>
+                        </div>
+                        <img src="./images/visa.png" class="right">
+                    </div>
+
+                    <!-- middle -->
+                    <div class="middle">
+                        <h1>$95,623</h1>
+                        <div class="chip">
+                            <img src="./images/card_chip.png">
+                        </div>   
+                    </div>
+
+                    <!-- bottom -->
+                    <div class="bottom">
+                        <div class="left">
+                            <small>Card Holder</small>
+                            <h5>RAVEN</h5>
+                        </div>
+                        <div class="right">
+                            <div class="expiry">
+                                <small>Expiry</small>
+                                <h5>08/23</h5>
+                            </div>
+                            <div class="cvv">
+                                <small>CVV</small>
+                                <h5>123</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of card 02 -->
+
+                <!-- card 03 -->
+                <div class="card">
+                    <!-- top -->
+                    <div class="top">
+                        <div class="left">
+                            <img src="./images/EUR.png">
+                            <h2>EUR</h2>
+                        </div>
+                        <img src="./images/visa.png" class="right">
+                    </div>
+
+                    <!-- middle -->
+                    <div class="middle">
+                        <h1>$74,384</h1>
+                        <div class="chip">
+                            <img src="./images/card_chip.png">
+                        </div>   
+                    </div>
+
+                    <!-- bottom -->
+                    <div class="bottom">
+                        <div class="left">
+                            <small>Card Holder</small>
+                            <h5>RAVEN</h5>
+                        </div>
+                        <div class="right">
+                            <div class="expiry">
+                                <small>Expiry</small>
+                                <h5>08/24</h5>
+                            </div>
+                            <div class="cvv">
+                                <small>CVV</small>
+                                <h5>123</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of card 03 -->
+
+            </div>
+            <!-- end of cards -->
+
+
+        </section>
+        <!-- end of middle -->
+
+
+
+
+        <!-- right -->
+        <section class="right">
+
+        </section>
+        <!-- end of right -->
+
+
+
+    </main>
     
 </body>
 </html>
