@@ -73,7 +73,7 @@ h5{
 }
 
 h6{
-    font-size: 7.6rem;
+    font-size: 1.6rem;
 }
 
 p{
@@ -350,6 +350,8 @@ main section.middle .header input[type="date"]{
     color: var(--color-gray-dark);
 }
 
+/* end header */
+
 main section.middle .cards{
     margin-top: 1rem;
     display: grid;
@@ -431,11 +433,91 @@ main section.middle .cards .bottom .right{
     display: flex;
     gap: 2rem;
 }
+/* end cards */
+
+
+
+/* monthly report */
+main .monthly-report{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+}
+
+main .monthly-report h1{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* end monthly report */
+
+
+/* fast payment */
+main .fast-payment{
+    margin-top: 2rem;
+    display: flex;
+    align-self: center;
+    gap: 2rem;
+}
+
+main .fast-payment .badges{
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+main .fast-payment .badges span{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+main .fast-payment .badge{
+    padding: 0.6rem  var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--border-radius-2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 300ms ease;
+}
+
+main .fast-payment .badge:hover{
+    box-shadow: 0 0 1.5rem var(--color-primary-light);
+    cursor: pointer;
+}
+
+main .fast-payment .badges:first-child span{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: fit-content;
+    font-size: 1.5rem;
+}
+
+main .fast-payment .badge div{
+    display: flex;
+    gap: 2rem;
+    align-self: center;
+}
+
+
+/* end fast payment */
 
 
 
 
-/* end header */
+
+
+
+
+
+
 
 
 /* end middle */
